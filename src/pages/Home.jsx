@@ -3,7 +3,7 @@ import React from "react";
 export default function Home() {
   return (
     <div className="w-screen h-auto p-8 ">
-      <div className="w-full h-screen flex flex-col">
+      <div className="w-full h-[80vh] flex flex-col items-center relative ">
         <div className="font-oswald flex flex-col ">
           <div className="text-9xl flex w-full items-center gap-9 justify-center">
             <p>YOUR IDEAS</p>
@@ -17,7 +17,13 @@ export default function Home() {
           </div>
           <div className="text-9xl text-center">TURNED REAL</div>
         </div>
-        <div className="flex justify-center items-center gap-4 p-4">
+        <div className=" mt-6 bottom-0 absolute ">
+          <button className="bg-green-600  text-white px-4 py-2  rounded-md hover:bg-green-500 transition duration-200 ease-in-out flex items-center justify-center text-2xl">
+            Get Started
+          </button>
+         
+        </div>
+        {/* <div className="flex justify-center items-center gap-4 p-4">
           <div className="flex flex-col items-center justify-center w-[30vw]">
             <img
               src="https://images.unsplash.com/photo-1612838320302-4b3b3b3b3b3b"
@@ -52,7 +58,7 @@ export default function Home() {
               with the world and get them turned into reality.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
